@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.header-area{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100px;
+}
+
+.header-area nav {
+    background-color: white;
+    display: flex;
+    margin: 15px 40px 0px 40px;
+    width: 100vw;
+    height: 100%;
+}
+
+nav .container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    font-size: 1rem;
+   
+}
+
+nav .container .logo-nome{
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.container .logo{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-nome span{
+    color: deeppink;
+}
+
+.contato .numeros, .contato .icon{
+    color: darkgrey;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.menu{
+    display: flex;
+    width: 60vw;
+}
+
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 35px 20px;
+}
+
+.menu ul li a:hover{
+    cursor: pointer;
+    color: white;
+    background-color:deeppink ;
+    padding: 35px 20px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #464d58;
+    font-weight: 500;
+}
+
+.imagem-inicio{
+    /* background-image: url(imagens/unhas.jpg); */
+    width: 100%;
+    height: 100vh;
+}
+
+.imagem-inicio .logo{
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.imagem-inicio .logo span{
+    color: deeppink;
+}
+
+.imagem-inicio .logo .nome{
+    font-size: 72px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f9f9;
+}
+
+.conteudo-principal{
+    background-color: white;
+    height: 80vh;
+    flex: 1;
+    padding: 100px 40px 60px 107px;
+}
+
+.conteudo-principal div .conteudo-principal-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    display: flex;
+    margin-bottom: 50px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.conteudo-principal div h2::after{
+    width: 65px;
+    height: 4px;
+    background-color: #FB03F9 ;
+    bottom: -270px;
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.conteudo-principal div p{
+    margin-block-start: 1rem;
+    font-weight: 400;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+    font-weight:500;
+    font-size: 14px;
+}
+
+.horario{
+    height: 80px;
+}
+
+span{
+    color: #FB03F9;
+}
+
+main aside {
+    height: 80vh;
+    background-color: white;
+    width: 30%;
+    
+}
+
+.media{
+    height: 100%;
+    width: 100%;
+    background: #1f1f1f none repeat scroll 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media .media-left{
+    height: 100%;
+    width: 70%;
+    padding: 60px 30px 60px 30px;
+}
+
+.media .media-left ul{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media .media-left ul li{
+    width: 60px;
+    height: 60px;
+    margin: 20px 10px;
+}
+
+.media .media-left ul li a{
+    font: normal normal normal 14px / 1 FontAwesome;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.media .media-left a i{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.media .media-left a i::before{
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media .media-left a i:hover{
+    color: #FB03F9;
+}
+
+footer .container-footer{
+    width: 100%;
+    height: 150px;
+    background-color: #333333;
+    display: flex;
+}
+
+.container-footer .conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container-footer .conteudo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.container-footer .conteudo a span{
+    margin-right: 10px;
+}
+
+.container-footer .conteudo a i{
+    color: #f9f9f9;
+}
+
+.container-footer .conteudo a:hover, .container-footer .conteudo a i:hover{
+    color: #FB03F9;
+}
+
+.container-footer .conteudo a strong{
+    margin-left: 5px;
+}
